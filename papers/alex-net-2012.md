@@ -1,6 +1,8 @@
-## Lipton et al. - 2015 - A critical review of recurrent neural networks
+## Imagenet classification with deep convolutional neural networks
 
-http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
+AlexNet
+
+http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 
 ### 要点
 

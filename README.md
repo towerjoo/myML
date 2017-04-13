@@ -6,3 +6,4 @@
 
 1. [A critical review of recurrent neural networks for sequence learning](papers/lipton-2015-review-RNN.md)
 1. [AlexNet](papers/alex-net-2012.md)
+1. [VGGNet](papers/vgg-net-2014.md)
