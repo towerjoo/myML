@@ -22,11 +22,15 @@ https://arxiv.org/abs/1409.4842
     * 更多的计算能力要求
 7. Inception结构：如何使用dense component来近似sparsed structure of Conv. (当下的硬件对dense component计算更加高效，而Conv. Net具有稀疏性，所以如何使用dense来近似sparse是关键）
 8. 具体的实现：
-    * 70% ratio of dropout(与AlexNet, VGGNet的50%不同）
-    * 1x1后紧跟3x3(或者其它的Conv, e.g 5x5, 7x7)
+    * 1x1后紧跟3x3(或者其它的Conv, e.g 5x5, 7x7), 然后汇聚(concat)
+    * 最后的dropout ration: 40%（相比于AlexNet等的50%)
+    * auxiliary classifer的使用
+        - AC学习到的梯度也会反馈回低层网络，从而加速收敛速度
+        - 70% ratio of dropout
     * DepthConcat是个有趣的实现
         -  the suggested architecture is a combination of all those layers with their output filter banks concatenated into a single output vector forming the input of the next stage.
         - adding an alternative par- allel pooling path in each such stage should have additional beneficial effect
+        - 同一层网络存在不同size的kernel，卷积后再汇聚(concat), 因为concat会造成kernel的数量增加（维度爆炸），所以在使用不同size的kernel前使用1x1的Conv.
 9. input image processing: 不同于AlexNet，将图片缩放到4个不同大小，256,288,320,352(较短边的长度），然后取left, center, right square（或者top, middle, bottom square如果是portraint), 对于square image，我们再取4个角，和中心（224x224), 水平翻转和缩放到224(4+1+1=6)的变形,每张输入图片会形成4x3x6x2=144个不同的crop, 然后对144个结果进行平均得到最终的结果(作者也试了对于144个结果进行max polling等，都比平均的效果差）
 10. 结果和分析
     * approximating the expected optimal sparse structure by readily available dense building blocks is a viable method for improving neural networks for computer vision
