@@ -29,3 +29,9 @@ http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residua
 2. 优化问题是深度学习的核心，我们构建了一个我们认为足够牛的网络结构，但当网络不收敛时，如何继续下去就是问题的核心，而优化的知识是最为重要的
 3. 引入shortcut这种方法回过头来看似乎很简单，但是背后的思想和理论支持才是为什么作者可以提出此方法的原因，而非我们读者只是觉得简单
 4. 一方面随着深度增加我们怕underfitting(training error增加），另一方面深度增加参数增加，我们又怕overfitting（test error增加，例如作者实验的10^3网络），那么尽量增加深度并且保持参数数量合适应该是我们需要重点考量和关注的（作者一直强调residual learning不会增加模型参数但可以增加深度和加快优化就是这个意思）
+
+### 讨论
+
+1. ResNet是不是RNN的一种？
+
+J. Schmidhuber claims it's the same thing as an LSTM without gates. (http://people.idsia.ch/~juergen/microsoft-wins-imagenet-through-feedforward-LSTM-without-gates.html)

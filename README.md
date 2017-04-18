@@ -11,6 +11,23 @@
 1. [VGGNet](papers/vgg-net-2014.md)
 1. [GoogLeNet](papers/google-net-2015.md)
 1. [ResNet](papers/resnet-2016.md)
+1. [Highway Networks](papers/highway-2016.md)
+
+### Representation
+
+1. [Representation Learning](papers/repr-learning-2013.md)
+
+### Gradient
+
+1. [Gradient Flow in Recurrent Nets](papers/grad-flow-2001.md)
+1. [Xavier initialization](papers/xavier-init-2010.md)
+1. [Delving deep into rectifier](papers/delve-deep-rectifier.md)
+1. [Rectified Linear Units improve RBM](papers/relu-2010.md)
+1. [Deep Sparse Rectifier Neural Network](papers/relu-2011.md)
+
+### Regularization
+
+1. [Dropout](papers/dropout-2014.md)
 
 ### 优化
 
@@ -20,4 +37,7 @@
 
 ## Segmentation
 
-1. 
+1. [R-CNN](papers/rcnn-2014.md)
+1. [Fast r-cnn](papers/fast-rcnn-2015.md)
+1. [Faster r-cnn](papers/faster-rcnn-2015.md)
+1. [FCN](papers/fcn-2015.md)
