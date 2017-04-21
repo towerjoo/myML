@@ -35,13 +35,14 @@
 2. [Batch Normalization](papers/batch-normalization-2015.md)
 
 
-## Segmentation
+## Detection/Segmentation
 
 1. [Scale Invariant Feature Transform(SIFT) 1999](papers/sift-1999.md)
 1. [Scale Invariant Feature Transform(SIFT) 2004](papers/sift-2004.md)
 1. [Histogram of Oriented Gradient(HOG)](papers/hog-2005.md)
 1. [Bag of Words(BoW)](papers/bag-of-words-2004.md)
 1. [selective search](papers/selective-search-2013.md)
+1. [Overfeat](papers/overfeat-2013.md)
 1. [R-CNN](papers/rcnn-2014.md)
 1. [Fast r-cnn](papers/fast-rcnn-2015.md)
 1. [Faster r-cnn](papers/faster-rcnn-2015.md)
