@@ -37,6 +37,8 @@
 
 ## Detection/Segmentation
 
+[R-CNN相关的回顾](https://blog.athelas.com/a-brief-history-of-cnns-in-image-segmentation-from-r-cnn-to-mask-r-cnn-34ea83205de4)
+
 1. [Scale Invariant Feature Transform(SIFT) 1999](papers/sift-1999.md)
 1. [Scale Invariant Feature Transform(SIFT) 2004](papers/sift-2004.md)
 1. [Histogram of Oriented Gradient(HOG)](papers/hog-2005.md)
@@ -46,4 +48,14 @@
 1. [R-CNN](papers/rcnn-2014.md)
 1. [Fast r-cnn](papers/fast-rcnn-2015.md)
 1. [Faster r-cnn](papers/faster-rcnn-2015.md)
+1. [Mask r-cnn](papers/mask-rcnn-2017.md)
 1. [FCN](papers/fcn-2015.md)
+
+## 生成网络
+
+1. [Generative Adversarial Nets(GAN)](papers/gan-2014.md)
+1. [Deep Convolutional GAN(DCGAN)](papers/dcgan-2015.md)
+
+## Transfer Learning
+
+1. [Learning and transferring mid-level image representations using convolutional neural networks](papers/transfer-cnn-2014.md)
