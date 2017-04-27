@@ -12,6 +12,7 @@
 1. [GoogLeNet](papers/google-net-2015.md)
 1. [ResNet](papers/resnet-2016.md)
 1. [Highway Networks](papers/highway-2016.md)
+1. [ResNeXt](papers/resnext-2017.md)
 
 ### Representation
 
