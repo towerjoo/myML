@@ -60,3 +60,5 @@
 ## Transfer Learning
 
 1. [Learning and transferring mid-level image representations using convolutional neural networks](papers/transfer-cnn-2014.md)
+1. [transfer learning(Lisa Torrey)](papers/transfer-lisa-2009.md)
+1. [transfer learning for visual categorization](papers/transfer-2015.md)
