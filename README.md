@@ -14,6 +14,10 @@
 1. [Highway Networks](papers/highway-2016.md)
 1. [ResNeXt](papers/resnext-2017.md)
 
+### NLP
+
+1. [Seq2Seq](papers/seq-to-seq-2014.md)
+
 ### Representation
 
 1. [Representation Learning](papers/repr-learning-2013.md)
@@ -63,3 +67,7 @@
 1. [transfer learning(Lisa Torrey)](papers/transfer-lisa-2009.md)
 1. [transfer learning for visual categorization](papers/transfer-2015.md)
 1. [One-Shot Learning](papers/one-shot-learning-2016.md)
+
+## Conferences
+
+1. [re-thinking generalization ICLR17](papers/rethink-generalization-2017.md)
