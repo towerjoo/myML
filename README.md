@@ -7,6 +7,7 @@
 1. [A critical review of recurrent neural networks for sequence learning](papers/lipton-2015-review-RNN.md)
 
 ### 重要的模型
+1. [SVM](papers/SVM-1995.md)
 1. [AlexNet](papers/alex-net-2012.md)
 1. [VGGNet](papers/vgg-net-2014.md)
 1. [GoogLeNet](papers/google-net-2015.md)
@@ -71,3 +72,8 @@
 ## Conferences
 
 1. [re-thinking generalization ICLR17](papers/rethink-generalization-2017.md)
+
+## NLP
+
+1. [word2vec](papers/word2vec-2013.md)
+1. [word2vec 2](papers/word2vec2-2013.md)

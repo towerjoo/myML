@@ -29,9 +29,15 @@ ICLR2017 best paper award
 4. 那么接下来有几个思路：
     * 如何在参数比较少的时候training set的accuracy仍旧很高，这时理论上就不是记住了dataset而是真正学到了规则？
     * 作者的思路，如何在多组解中选择泛化能力最强的解？
+5. 看到了在reddit/quora等上关于此篇论文的讨论，有意思的几点：
+    * 一个人提到作者的random label实验证明了DNN根本没有泛化能力，而不是有很好的泛化能力
+    * brute force memorization当然不是我们希望DNN做的，我们希望DNN可以返现规律，但是我们人类是否也是通过brute force memorization来泛化的？
+    * 有人提到更短的训练时间和flatter minimum是是否泛化（学到真正的规律）的特征，我觉得还是很符合直觉的
 5. 在作者发表此论文前，有读过作者的一些博客文章，除了学术，也是一个懂得生活的人和经常反思的人，如此的人才是有趣的人
 
 
 ### 参考
 
 1. 一个解读：https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/
+2. https://www.reddit.com/r/MachineLearning/comments/5kfs23/r_understanding_deep_learning_requires_rethinking/
+3. https://www.quora.com/Why-is-the-paper-%E2%80%9CUnderstanding-Deep-Learning-required-Rethinking-Generalization%E2%80%9C-important
