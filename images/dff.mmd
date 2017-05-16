@@ -1,0 +1,8 @@
+graph TB
+    A(start)-->B[current frame i]
+    B-->C{is key frame}
+    C-->|Y|D["使用CNN获取feature;获取分类y"]
+    C-->|N|E["使用feature flow获取feature;获取分类y"]
+    D-->G[frame i处理完成]
+    E-->G
+    G-->|"增加i直到最后一帧或者无穷大(streaming)"|B
