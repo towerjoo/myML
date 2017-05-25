@@ -57,6 +57,7 @@
 1. [Mask r-cnn](papers/mask-rcnn-2017.md)
 1. [FCN](papers/fcn-2015.md)
 1. [Deep Feature Flow](papers/dff-2016.md)
+1. [R-FCN](papers/rfcn-2016.md)
 
 ## 生成网络
 
