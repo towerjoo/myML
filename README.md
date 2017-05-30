@@ -63,6 +63,7 @@
 
 1. [Generative Adversarial Nets(GAN)](papers/gan-2014.md)
 1. [Deep Convolutional GAN(DCGAN)](papers/dcgan-2015.md)
+1. [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks(CycleGAN)](papers/cyclegan-2017.md)
 
 ## Transfer Learning
 
