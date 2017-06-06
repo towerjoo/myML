@@ -1,5 +1,17 @@
 # 我的机器学习之路
 
+## models
+
+### 任务类别
+
+1. [分类 classifier](models/classifier.md)
+1. [回归 regression](models/regression.md)
+
+### 重点模型
+
+1. [SVM](models/SVM.md)
+1. [Random Forest](models/RandomForest.md)
+
 ## papers
 
 ### 综述型
