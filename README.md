@@ -71,6 +71,11 @@
 1. [Deep Feature Flow](papers/dff-2016.md)
 1. [R-FCN](papers/rfcn-2016.md)
 
+## Realtime Tracking
+
+1. [ECO Efficient Convolution Operators for Tracking](papers/eco-2016.md)
+
+
 ## 生成网络
 
 1. [Generative Adversarial Nets(GAN)](papers/gan-2014.md)
@@ -92,3 +97,7 @@
 
 1. [word2vec](papers/word2vec-2013.md)
 1. [word2vec 2](papers/word2vec2-2013.md)
+
+## PaperWeekly
+
+1. [Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour](papers/weekly/train_imagenet.md)

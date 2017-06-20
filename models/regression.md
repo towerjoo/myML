@@ -29,3 +29,5 @@ https://en.wikipedia.org/wiki/Coefficient_of_determination
 引入了adjusted R^2来解决这个问题。
 
 在常用的scikit-learn library中，对于regression通常使用的是R^2
+
+参考scikit-learn中关于回归的metrics: http://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics
