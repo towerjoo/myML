@@ -101,4 +101,4 @@
 ## PaperWeekly
 
 1. [Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour](papers/weekly/train_imagenet.md)
-1. [Variational Approaches for Auto-Encoding Generative Adversarial Networks](papers/weekly/AEGAN.md)
+1. [Variational Approaches for Auto-Encoding Generative Adversarial Networks(alpha-GAN)](papers/weekly/AEGAN.md)
