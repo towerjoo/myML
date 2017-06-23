@@ -7,7 +7,7 @@ By DeepMind
 
 ### 要点
 
-![objective function](images/vaegan.png)
+![objective function](/images/vaegan.png)
 
 1. mode-collapse: generated data does not reflect the diversity of the underlying data distribution
 2. AE-GAN
@@ -32,7 +32,7 @@ By DeepMind
     * the network architectures: given enough capacity, DCGAN can be very robust, does not suffer obvious mode collapse
     * number of updates  for each model components: 作者发现更新多次generator然后更新一次discriminator效果更好（而非GAN theory中更新多次discriminator然后一次generator）
 
-![comparationfunction](images/gancomp.png)
+![comparationfunction](/images/gancomp.png)
 
 
 ### 个人点评
