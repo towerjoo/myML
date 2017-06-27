@@ -18,6 +18,10 @@
 
 1. [A critical review of recurrent neural networks for sequence learning](papers/lipton-2015-review-RNN.md)
 
+### 理论
+
+1. [On the Expressive Power of Deep Architectures](papers/weekly/bengio2011.md)
+
 ### 重要的模型
 1. [SVM](papers/SVM-1995.md)
 1. [AlexNet](papers/alex-net-2012.md)
