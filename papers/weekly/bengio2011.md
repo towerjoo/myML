@@ -4,6 +4,8 @@ http://www.iro.umontreal.ca/~lisa/bib/pub_subject/finance/pointeurs/ALT2011.pdf
 
 By **Bengio**
 
+**主要说明了deep network为什么比shallow network更加高效（几何级节约节点数）**
+
 
 ### 要点
 

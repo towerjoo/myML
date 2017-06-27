@@ -20,7 +20,7 @@
 
 ### 理论
 
-1. [On the Expressive Power of Deep Architectures](papers/weekly/bengio2011.md)
+1. [On the Expressive Power of Deep Architectures](papers/weekly/bengio2011.md) (说明了deep network is more efficent than shallow/wide network)
 
 ### 重要的模型
 1. [SVM](papers/SVM-1995.md)
