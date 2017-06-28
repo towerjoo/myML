@@ -20,7 +20,7 @@ https://www.researchgate.net/profile/Daniel_Onoro/publication/306118084_Towards_
 
 CCNN的网络结构
 
-![Hydra CNN](images/hydra_cnn.png)
+![Hydra CNN](/images/hydra_cnn.png)
 
 Hydra CNN结构
 
