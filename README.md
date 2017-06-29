@@ -102,9 +102,13 @@
 1. [word2vec](papers/word2vec-2013.md)
 1. [word2vec 2](papers/word2vec2-2013.md)
 
+## Reasoning
+1. [Neural Module Networks](papers/weekly/nmn.md)
+
 ## PaperWeekly
 
 1. [Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour](papers/weekly/train_imagenet.md)
 1. [Variational Approaches for Auto-Encoding Generative Adversarial Networks(alpha-GAN)](papers/weekly/AEGAN.md)
 1. [MobileNets](papers/weekly/mobilenets.md)
 1. [Towards perspective-free object counting with deep learning](papers/weekly/obj-counting.md)
+
