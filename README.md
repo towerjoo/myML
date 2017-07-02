@@ -112,4 +112,5 @@
 1. [MobileNets](papers/weekly/mobilenets.md)
 1. [Towards perspective-free object counting with deep learning](papers/weekly/obj-counting.md)
 1. [Sobolev Training for Neural Networks](papers/weekly/sobolev.md)
+1. [Attention is All You Need](papers/weekly/attention.md)
 
