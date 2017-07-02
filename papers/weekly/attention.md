@@ -29,9 +29,11 @@ model architecture
 1. 并行化是很重要的一个研究方向，因为目前制约DL的很大一个因素就是training time和evaluation time，这也是为什么之前Facebook将CNN引入机器翻译的原因
 2. RNN等类似的时序Model因为本身的限制（当前操作依赖于前一时序的输出）所以很难并行化，这也是Google的这个论文的价值所在
 3. 更重要的是，此论文提出的model不止提高了并行性（训练效率），并且保持了更好的准确度（事实上二者很多时候是不可兼得的，Google这次做的很棒）
+4. 当然像这样novel和相对比较复杂的model还是需要长时间在领域里面的钻研
 
 
 
 ### Resources
 
 1. https://github.com/tensorflow/tensor2tensor
+2. https://github.com/hoangcuong2011/Good-Papers/blob/master/Attention%20Is%20All%20You%20Need.md (also a reading note about this paper)
