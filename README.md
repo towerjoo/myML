@@ -113,4 +113,5 @@
 1. [Towards perspective-free object counting with deep learning](papers/weekly/obj-counting.md)
 1. [Sobolev Training for Neural Networks](papers/weekly/sobolev.md)
 1. [Attention is All You Need](papers/weekly/attention.md)
+1. [A note on the evaluation of generative models](papers/weekly/eval_gen.md)
 
