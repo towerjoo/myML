@@ -104,6 +104,7 @@
 
 ## Reasoning
 1. [Neural Module Networks](papers/weekly/nmn.md)
+1. [A simple neural network module for relational reasoning](papers/weekly/rational_reason.md)
 
 ## PaperWeekly
 
