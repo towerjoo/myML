@@ -52,3 +52,4 @@ Visual QA的架构
 1. https://hackernoon.com/deepmind-relational-networks-demystified-b593e408b643
 2. https://deepmind.com/blog/neural-approach-relational-reasoning/
 3. https://news.ycombinator.com/item?id=14494935
+4. https://github.com/kimhc6028/relational-networks
