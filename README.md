@@ -119,4 +119,5 @@
 1. [Neural Turing Machines(NTM)](papers/weekly/ntm.md)
 1. [Hybrid computing using a neural network with dynamic external memory(DNC)](papers/weekly/dnc.md)
 1. [Densely Connected Convolutional Networks(DenseNet)](papers/weekly/densenet.md)
+1. [Annotating Object Instances with a Polygon-RNN](papers/weekly/polygon-rnn.md)
 
