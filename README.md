@@ -116,4 +116,6 @@
 1. [Attention is All You Need](papers/weekly/attention.md)
 1. [A note on the evaluation of generative models](papers/weekly/eval_gen.md)
 1. [Neural Turing Machines(NTM)](papers/weekly/ntm.md)
+1. [Hybrid computing using a neural network with dynamic external memory(DNC)](papers/weekly/dnc.md)
+1. [Densely Connected Convolutional Networks(DenseNet)](papers/weekly/densenet.md)
 
