@@ -11,7 +11,7 @@ http://arxiv.org/abs/1704.05548
 3. 标注人可以调整某个顶点，那么后续的顶点生成则是以调整的顶点为输入，而不是预测的顶点（有点active learning的意思）
 4. 实验和比较
 
-![polyrnn](/images/plyrnn.png)
+![polyrnn](/images/polyrnn.png)
 
 ### 个人点评
 
