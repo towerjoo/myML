@@ -9,6 +9,7 @@ By **DeepMind**
 ### 要点
 
 1. 传统电脑使用唯一地址来access memory content, DNC使用differentiable attention mechanisms
+2. 
 
 
 ### 个人点评

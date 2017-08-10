@@ -75,6 +75,8 @@
 1. [Deep Feature Flow](papers/dff-2016.md)
 1. [R-FCN](papers/rfcn-2016.md)
 1. [Yolo9000](papers/weekly/yolo9000.md)
+1. [Speed/accuracy trade-offs for modern convolutional object detectors](papers/weekly/convOD.md)
+1. [SSD(SSD: Single Shot MultiBox Detector)](papers/weekly/SSD.md)
 
 ## Realtime Tracking
 
