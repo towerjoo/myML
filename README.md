@@ -122,4 +122,6 @@
 1. [Hybrid computing using a neural network with dynamic external memory(DNC)](papers/weekly/dnc.md)
 1. [Densely Connected Convolutional Networks(DenseNet)](papers/weekly/densenet.md)
 1. [Annotating Object Instances with a Polygon-RNN](papers/weekly/polygon-rnn.md)
+1. [Learning Hierarchical Features from Generative Models](papers/weekly/feature-gan.md)
+1. [ZhuSuan: A Library for Bayesian Deep Learning](papers/weekly/zhusuan.md)
 
