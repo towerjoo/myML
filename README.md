@@ -124,4 +124,5 @@
 1. [Annotating Object Instances with a Polygon-RNN](papers/weekly/polygon-rnn.md)
 1. [Learning Hierarchical Features from Generative Models](papers/weekly/feature-gan.md)
 1. [ZhuSuan: A Library for Bayesian Deep Learning](papers/weekly/zhusuan.md)
+1. [100-epoch ImageNet Training with AlexNet in 24 Minutes](papers/weekly/100hours.md)
 
