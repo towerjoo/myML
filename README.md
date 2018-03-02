@@ -127,4 +127,5 @@
 1. [100-epoch ImageNet Training with AlexNet in 24 Minutes](papers/weekly/100hours.md)
 1. [A systematic study of the class imbalance problem in convolutional neural networks](papers/class-imbalance-2017.md)
 1. [A few useful things to know about machine learning](papers/useful-things-2012.md)
+1. [Online Learning: A Comprehensive Survey](papers/online-learning.md)
 
