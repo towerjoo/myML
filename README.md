@@ -128,4 +128,5 @@
 1. [A systematic study of the class imbalance problem in convolutional neural networks](papers/class-imbalance-2017.md)
 1. [A few useful things to know about machine learning](papers/useful-things-2012.md)
 1. [Online Learning: A Comprehensive Survey](papers/online-learning-2018.md)
+1. [Visual Interpretability for Deep Learning: a Survey](papers/dl-visual-interpretability-2018.md)
 
