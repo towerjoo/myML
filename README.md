@@ -131,4 +131,5 @@
 1. [Visual Interpretability for Deep Learning: a Survey](papers/dl-visual-interpretability-2018.md)
 1. [One Big Net For Everything](papers/one-big-net-2018.md)
 1. [Towards end-to-end spoken language understanding](papers/end-to-end-spoken-lang-understand-2018.md)
+1. [Large-Scale Evolution of Image Classifiers](papers/evol-img-cls-2018.md)
 
