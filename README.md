@@ -133,4 +133,5 @@
 1. [Towards end-to-end spoken language understanding](papers/end-to-end-spoken-lang-understand-2018.md)
 1. [Large-Scale Evolution of Image Classifiers](papers/evol-img-cls-2018.md)
 1. [Regularized Evolution for Image Classifier Architecture Search](papers/reg-evolve-2018.md)
+1. [What can machine learning do? Workforce implications](papers/ml-workforce-2017.md)
 
