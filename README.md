@@ -135,4 +135,5 @@
 1. [Regularized Evolution for Image Classifier Architecture Search](papers/reg-evolve-2018.md)
 1. [What can machine learning do? Workforce implications](papers/ml-workforce-2017.md)
 1. [Are GANs Created Equal? A Large-Scale Study](papers/gan-study-2017.md)
+1. [YOLOv3: An Incremental Improvement](papers/yolo-v3-2018.md)
 
