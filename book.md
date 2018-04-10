@@ -16,9 +16,17 @@
 ![cover](/images/dl-with-python.jpg)
 
 1. [douban](https://book.douban.com/subject/27038207/)  [amazon](https://www.amazon.com/Deep-Learning-Python-Francois-Chollet/dp/1617294438)
-1. publish date: Dec. 22, 2017(1st version)
+1. publish date: October 28, 2017(1st version)
 1. rate: ⭐️⭐️⭐️⭐️⭐️
-1. [My Review]()
+1. [My Review](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md)
 
 This book is written by the author of **Keras**.
 
+## High Performance Python by Micha Gorelick, etc
+
+![cover](/images/high-performance.png)
+
+1. [douban](https://book.douban.com/subject/24641620/)  [amazon](https://www.amazon.com/High-Performance-Python-Performant-Programming/dp/1449361595)
+1. publish date: October 22, 2013(1st version)
+1. rate: ⭐️⭐️⭐️⭐️⭐️
+1. [My Review]()
