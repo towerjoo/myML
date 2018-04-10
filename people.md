@@ -4,3 +4,5 @@
     * R-CNN
 3. [J. Schmidhuber](http://people.idsia.ch/~juergen/)
     * LSTM
+4. [Ian Goodfellow](http://www.iangoodfellow.com/)
+	* GAN
