@@ -24,7 +24,7 @@ This book is written by the author of **Keras**.
 
 ## High Performance Python by Micha Gorelick, etc
 
-![cover](/images/high-performance.png)
+![cover](/images/high-performance.jpg)
 
 1. [douban](https://book.douban.com/subject/24641620/)  [amazon](https://www.amazon.com/High-Performance-Python-Performant-Programming/dp/1449361595)
 1. publish date: October 22, 2013(1st version)
