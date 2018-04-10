@@ -21,20 +21,29 @@ by **DeepMind**
 	* employ an exact Bayes’ update-rule without compromising the flexibility and expressive power of neural networks
 
 
-![VAE](/images/vae.png)
 VAE
+---
+![VAE](/images/vae.png)
+
+Generative Model
+---
 
 ![gen-model](/images/gen-model.png)
-Generative Model
+
+Reading Inference Model
+---
 
 ![inf-model](/images/inf-read.png)
-Reading Inference Model
+
+Writing Inference Model
+---
 
 ![inf-model](/images/inf-write.png)
-Writing Inference Model
+
+Training Loss Function
+---
 
 ![train](/images/kanerva-train.png)
-Training Loss Function
 
 ### 个人点评
 
