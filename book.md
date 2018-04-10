@@ -10,3 +10,12 @@
 
 1. rate: ⭐️⭐️⭐️⭐️⭐️
 2. [My Review]()
+
+## Deep Learning with Python by Francois Chollet
+
+![cover](/images/dl-with-python.jpg)
+
+0. [link](https://book.douban.com/subject/27038207/)
+1. rate: ⭐️⭐️⭐️⭐️⭐️
+2. [My Review]()
+
