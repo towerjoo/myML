@@ -141,4 +141,5 @@
 1. [YOLOv3: An Incremental Improvement](papers/yolo-v3-2018.md)
 1. [One-Shot Generalization in Deep Generative Models](papers/one-shot-deep-generative-model-2016.md)
 1. [THE KANERVA MACHINE:A GENERATIVE DISTRIBUTED MEMORY](papers/kanerva-machine-2018.md)
+1. [Human-level concept learning through probabilistic program induction](papers/human-level-concept-2015.md)
 
