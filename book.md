@@ -30,3 +30,12 @@ This book is written by the author of **Keras**.
 1. publish date: October 22, 2013(1st version)
 1. rate: ⭐️⭐️⭐️⭐️⭐️
 1. [My Review]()
+
+## Information Theory, Inference and Learning Algorithms by David MacKay
+
+![cover](/images/david-mackay.jpg)
+
+1. [douban](https://book.douban.com/subject/1789534/)  [amazon](https://www.amazon.com/exec/obidos/tg/detail/-/0521642981/qid=1057850920/sr=1-4)
+1. publish date: 2003(1st version)
+1. rate: ⭐️⭐️⭐️⭐️⭐️
+1. [My Review]()
