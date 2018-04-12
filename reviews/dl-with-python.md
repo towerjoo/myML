@@ -139,3 +139,28 @@ Quick Link
 ![chap2 summary](/images/chap2-summary.png)
 
 ## Chapter 3: Getting started with neural networks
+
+1. layers: the building blocks of deep learning
+	* layer compatibility: every layer will only accept input tensors of a certain shape and will return output tensors of a cer- tain shape
+		- layer = layers.Dense(32, input_shape=(784,)): a layer that will only accept as input 2D tensors where the first dimension is 784 (axis 0, the batch dimension, is unspecified, and thus any value would be accepted). This layer will return a tensor where the first dimension has been transformed to be 32.
+		- 上面代码 the model will take as input arrays of shape (*, 784), 也就是说batch size可以任意取值, output arrays of shape (*, 32)
+		- Keras中第一个layer需要specify input_shape，其他的layer都不需要显式的设置，Keras会自动确定（前一个layer的output shape和后一个layer的input shape匹配）
+2. models: a directed, acyclic graph of layers
+	* By choosing a network topology, you constrain your space of possibilities (hypothesis space) to a specific series of tensor operations, mapping input data to output data(缩小搜索空间)
+	* more an art than a science （所谓炼丹师😅）
+3. Loss functions and optimizers:keys to configuring the learning process
+	* for multiloss networks, all losses are combined (via averaging) into a single scalar quantity
+	* binary crossentropy for a two-class classification problem
+	* categorical crossentropy for a many-class classification problem
+	* mean-squared error for a regression problem
+	* connectionist temporal classification (CTC) for a sequence-learning problem
+	* 当然如果我们要提出我们自己的Net(ResNet, AlexNet等），我们可能需要设计自己的loss function
+4. IMDB example
+	* we need to preprocess the input data to make sure they have the same length(e.g one-hot encoding, etc.)
+	* how many layers to use
+	* how many hidden units to choose for each layer: a bigger number means a higher dimensions, i.e more computations(representation capacity), but might overfit
+	* plotting the history data is interesting and helpful(since it might be overfitting very soon)
+5. classifying newswires
+
+
+![keras](/images/keras-arch.png)
