@@ -22,7 +22,7 @@ Quick Link
 
 * [Chapter 1: What is Deep Learning](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-1-what-is-deep-learning)
 * [Chapter 2: the mathematical building blocks of neural networks](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-2-the-mathematical-building-blocks-of-neural-networks)
-* [Chapter 3: Getting started with neural networks]()
+* [Chapter 3: Getting started with neural networks](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-3-getting-started-with-neural-networks)
 
 ## Chapter 1: What is Deep Learning?
 
