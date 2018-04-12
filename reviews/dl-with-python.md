@@ -20,7 +20,7 @@ And I gave my chapter based reading notes as below.
 
 Quick Link
 
-* [Chapter 1: What is Deep Learning]()
+* [Chapter 1: What is Deep Learning](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-1-what-is-deep-learning)
 * [Chapter 2: the mathematical building blocks of neural networks]()
 
 ## Chapter 1: What is Deep Learning?
