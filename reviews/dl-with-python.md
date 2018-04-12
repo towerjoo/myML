@@ -137,3 +137,5 @@ Quick Link
 
 
 ![chap2 summary](/images/chap2-summary.png)
+
+## Chapter 3: Getting started with neural networks
