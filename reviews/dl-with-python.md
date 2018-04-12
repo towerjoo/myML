@@ -161,6 +161,15 @@ Quick Link
 	* how many hidden units to choose for each layer: a bigger number means a higher dimensions, i.e more computations(representation capacity), but might overfit
 	* plotting the history data is interesting and helpful(since it might be overfitting very soon)
 5. classifying newswires
-
+	* one lable multiclass classification problem
+	* the hidden layer should have >46 dimensions to have enough representation capacity(<46 will make the output after that layer drop some information, which cannot be recovered in the subsequent layers)
+	* you might need to one-hot encode the input data(or use the builtin *to_categorical* util function, do the same thing)
+	* the output layer should have N dimensions(N == the class number)
+	* multiclass classification we often use *categorical_crossentropy* loss fuction(compare to binary classification's *sigmoid*)	
+	* also need to encode the labels
+		- one-hot encoding using *to_categorical*(the loss function will be *categorical_crossentropy*)
+		- encoding as integers(the loss function will be *sparse_categorical_crossentropy*)
+5. housing prediction
+	
 
 ![keras](/images/keras-arch.png)
