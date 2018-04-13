@@ -170,6 +170,16 @@ Quick Link
 		- one-hot encoding using *to_categorical*(the loss function will be *categorical_crossentropy*)
 		- encoding as integers(the loss function will be *sparse_categorical_crossentropy*)
 5. housing prediction
+	* regression problem
+	* normalize the data(training and test)
+		- if not, the training process will be much harder(but not impossible)
+		- normalize(data) = (data - mean) / std;
+		- never use the test data to calculate mean and std(you should not touch the test data when training, but you can apply the normalization using the mean/std calculated using the training data)
+	* for regression, we often use *mean squared error*(i.e MSE) as the loss function
+	* we also use the *mean absolute error*(i.e MAE) as the metric
+	* if the training data is too few, we might use *k-fold* validation
 	
 
 ![keras](/images/keras-arch.png)
+
+![chap3 summary](/images/chap3-summary.png)
