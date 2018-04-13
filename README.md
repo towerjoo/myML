@@ -26,3 +26,14 @@ interesting(AI is like magic in some ways 😀).
 ML/DL as a fast-evolving field, it's always best to catch the latest progress from reading the good papers.
 
 So I have my own [papers reading](https://github.com/towerjoo/myML/blob/master/paper.md).
+
+## Projects
+
+As a enginner(programmer/coder, or whatever you name it), we all know "talk is cheap show me the codes", so we need to put
+the theory into application, which to make people an easier life, show our skill, or just for fun.
+
+I have several ML related projects, which might be toys, but it must have fun in its own.
+
+1. [DigitsRecognition](https://github.com/towerjoo/DigitsRecognition) *In progress*
+1. [TableRecognition](https://github.com/towerjoo/TableRecognition) *In progress*
+1. [PhotosExplorer](https://github.com/towerjoo/PhotosExplorer) *Not Started Yet*
