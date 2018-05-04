@@ -183,3 +183,72 @@ Quick Link
 ![keras](/images/keras-arch.png)
 
 ![chap3 summary](/images/chap3-summary.png)
+
+
+## Chapter 4: Fundamentals of machine learning
+
+1. four branches of ML
+	* supervised learning: examples with label to learn the mapping from input to output
+		- most popular ones
+		- sequence generation
+		- syntax tree prediction
+		- object detection: regression(bounding box coordination) + classification(for the object)
+		- image segmentation
+	* unsupervised learning
+		- dimensionality
+		- clustering
+	* self-supervised learning: supervised learning without human in the loop
+		- next frame for a video given past frames, next word in the sentence
+		- autoencoder
+	* reinforcement learning
+		- maximize reward
+		- self-driving cars, robotics, resource management, education
+2. evaluate ML models
+	* split data into training, validation, test
+	* recipes
+		- simple hold-out validation: train=S[:n], val=S[n:], suffer with a small S
+		- k-fold validation: K partitions with same size, for each partition i, train against remaining K-1 samples, validate against the i-th samples; final score is the average
+		- iterated k-fold validation with shuffling: apply k-fold validation many times and shuffle before each time, evaluate PxK models(P: iterations, K: folds)
+	* tips
+		- data representativeness: if the data are in order, you might need to shuffle to gain a better representativeness
+		- the arrow of time: pick the test set **posterior** to the data in training set
+		- redundancy in data: make sure training data and validation data are disjoined
+3. data preprocessing, feature engineering, feature learning
+	* data preprocessing
+		- vectorization: inputs/targets for NN should be tensors of float
+		- normalization: take small values(typicially between 0 and 1), be homogenous(all data roughly in same range), often(but not always necessary) to ensure mean=0, std=1
+		- handling missing values: it's often safe to input missing values as 0(if 0 is not a meaningful value in data), NN will learn to ignore 0 for the feature value; if test data have missing values, but training data don't, we might need to fill some missing samples to training data
+	* feature engineering: the process of using your own knowledge about the data and about the machine-learning algorithm at hand (in this case, a neural network) to make the algorithm work better by applying hardcoded (nonlearned) transformations to the data before it goes into the model
+		- making a problem easier by expressing it in a simpler way
+4. overfitting and underfitting
+	* get more training data
+	* regularization
+		- reduce the network size: bigger size, bigger capacity(memorization capacity), which means a perfect dictionary-like mapping between input and output(hard to generalize); with a smaller capacity, model tends to learn the compressed representation which has a better prediction
+		- add weight regularization: simpler model tends to generalize better(Occam's razor), simple means the distribution of the parameters has less entropy(or fewer parameters), normally make the weights to take small values(i.e more regular) using weight regularization. L1 regularization: absolute value of the weight coefficients(L1 norm of weights); L2 regularization: square of the value of the weight coefficients(L2 norm) also called **weight decay**
+		- add dropout: introducing noise in the output values of a layer can break up happenstance patterns that aren’t significant (what Hinton refers to as con- spiracies), which the network will start memorizing if no noise is present. drop out randomly a number of output features of the layer during training.
+5. universal workflow of ML
+	* define the problem and assemble the dataset
+	* choose a measure of success
+	* decide on an evaluation protocol
+	* prepare data
+	* develop a model that does better than the baseline
+	* scaling up: developing a model that overfits
+		- add more layers
+		- make the layers bigger
+		- train for more epochs
+	* regularize your model and tune your hyperparameters
+		- add dropout
+		- different architectures: add/remove layers
+		- add L1/L2 regularization
+		- different hyperparameters
+		- feature engineering: add/remove features	
+
+![clock](/images/fe-clock.png)
+
+![regularization](/images/reg-chart.png)
+
+![drop out](/images/dropout-chart.png)
+
+![act and loss](/images/act-loss.png)
+
+![summary](/images/chap4-summary.png)
