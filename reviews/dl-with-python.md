@@ -252,3 +252,73 @@ Quick Link
 ![act and loss](/images/act-loss.png)
 
 ![summary](/images/chap4-summary.png)
+
+## Chapter 5: Deep learning for computer vision
+
+1. example of convnet
+	* a convnet takes as input tensor of shape (image_hieght, image_width, image_channels), e.g for MNIST, it is (28, 28, 1)
+2. convolution operation
+	* why it's better than dense connected layer?
+		- Dense layers learn global patterns in their input feature space, while convolution layers learn local patterns (small 2d window)
+		- the pattern convnet learns is translation invariant
+		- they can learn spatial hierachies of patterns
+	* convolution operates on 3D tensors, called **feature map**, with two spatial axes(i.e height, width) as well as **depth** axis(also known as **channels**)
+		- convolution layer converts a input feature map to an output feature map(depth can be arbitrary, no longer stands for channels, but for filters)
+		- feature map: every dimension in the depth axis is a feature(or filter), and the 2D tensor output[:, :, n] is the 2D spatial map of the response of the filter over the input
+	* key parameters of the convolution layer
+		- size of patches extracted from inputs: typically 3X3, or 5X5
+		- depth of the output feature map: e.g 32, or 64, etc.
+		- in Keras, it is `Conv2D(output_depth, (window_height, window_width))`
+		- the output width and height might differ from input, for 1) border effects(can be countered by padding), 2) strides
+		- by default, stride=1, but it can be > 1, which means the height/width of the feature map is downsampled by stride(e.g 2), but in practice stride!=1 is rarely used, and we use max pooling to downsample
+	* max pooling: extracting windows from the input feature maps and outputting the max value of each channel
+		- it's conceptually similar to convolution, except that instead of transforming local patches via a learned linear transformation (the convolution kernel), they’re transformed via a hardcoded max tensor operation
+		- max pooling is usually done with 2X2 windows and stride 2, to downsample the feature map by 2, while convolution is often done with 3X3 window without stride(=1)
+		- the reason to use downsampling is to reduce the number of feature-map coefficients to process, as well as to induce spatial-filter hierarchies by making successive convolution layers look at increasingly large windows (in terms of the fraction of the original input they cover)
+		- max pooling is not the only way to achieve downsampling, other ways include: 1) strides 2) average pooling
+		- features tend to encode the spatial presence of some pattern or concept over the different tiles of the feature map (hence, the term feature map), and it’s more informative to look at the maximal presence of different features than at their average presence. So the most reasonable subsampling strategy is to first produce dense maps of features (via unstrided convolutions) and then look at the maximal activation of the features over small patches, rather than looking at sparser windows of the inputs (via strided convolutions) or averaging input patches, which could cause you to miss or dilute feature-presence information.
+3. training a convnet on a small dataset
+	* data preprocessing
+		- read the picture files
+		- decode the JPEG content to RGB grids of pixels
+		- convert these into floating-point tensors
+		- rescale the pixel values(between 0 and 255) to the [0, 1] interval 
+	* data augmentation(to mitigate thee issue of too few examples): use Keras's helper function
+	* use a pretrained convnet
+		- feature extraction: using the representations learned by a previous network to extract interesting features from new samples. These features are then run through a new classifier, which is trained from scratch. representations learned by conv base are likely more generic and therefore more reusable. representations learned by the classifier will necessarily be specific to the set of classes on which the model was trained. Layers that come earlier in the model extract local, highly generic feature maps (such as visual edges, colors, and textures), whereas layers that are higher up extract more-abstract concepts (such as “cat ear” or “dog eye”)
+			* fast feature extracting without data augmentation: recording the output of conv_base on your data and using these outputs as inputs to a new model(no need to run the convnet for every input image, so much cheaper)
+			* feature extracting with data augmentation: extending the conv_base model and running it end to end on the inputs(each input will go thru the convnet, which is much more expensive, and might require to run on a GPU), need to freeze the conv_base before training(to not change the weights for conv_base)
+		- feature tuning: consists of unfreezing a few of the top layers of a frozen model base used for feature extraction, and jointly training both the newly added part of the model (in this case, the fully connected classifier) and these top layers
+			* Add your custom network on top of an already-trained base network
+			* freeze the base network
+			* train the part you added
+			* unfreeze some layers in the base network
+			* jointly train both the unfreezed layers and the part you added
+	* wrapping up
+		- Convnets are the best type of machine-learning models for computer-vision tasks. It’s possible to train one from scratch even on a very small dataset, with decent results
+		- On a small dataset, overfitting will be the main issue. Data augmentation is a powerful way to fight overfitting when you’re working with image data
+		- It’s easy to reuse an existing convnet on a new dataset via feature extraction. This is a valuable technique for working with small image datasets	
+		- As a complement to feature extraction, you can use fine-tuning, which adapts to a new problem some of the representations previously learned by an existing model. This pushes performance a bit further
+4. Visualizing what convnets learn
+	* visualizing intermediate convnet outputs (intermediate activations)
+		- the features extracted by a layer become increasingly abstract with the depth of the layer
+		-  acts as an information distillation pipeline
+	* visualizing convnets filters
+		- each layer in a convnet learns a collection of filters such that their inputs can be expressed as a combination of the filters
+	* visualizing heatmaps of class activation in an image
+		- understanding which parts of a given image led a convnet to its final classification decision
+
+	
+
+![convnet](/images/convnet-cat.png)
+
+![response map](/images/resp-map.png)
+
+![Conv How](/images/conv-how.png)
+
+![Feature extraction](/images/feature-extraction.png)
+
+![fine tuning](/images/fine-tune.png)
+
+![summary](/images/chap5-summary.png)
+
