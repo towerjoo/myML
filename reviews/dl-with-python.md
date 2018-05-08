@@ -322,3 +322,52 @@ Quick Link
 
 ![summary](/images/chap5-summary.png)
 
+
+## Chapter 6: Deep learning for text and sequences
+
+1. working with text data(often in the level of words not character)
+	* vectorizing text(remeber NN expects a tensor of float)
+		- segment text into words, and transform each word into a vector
+		- segment text into characters and transform each character into a vector
+		- extract n-grams of words or characters, and transform each n-gram into a vector. N-grams are overlapping groups of multiple consecutive words or characters
+	* n-grams and bag-of-words: a way of feature engineering, when using lightweight, shallow text-processing models. DNN won't need to have such explicit groups, while the model itself will learn them implicitly.
+	* one-hot encoding of words and characters: qera has the builtin helper function to ease the process
+	* word embeddings(learn from data)
+		- learn word embeddings jointly with the main task you care about.
+		- load into your model word embeddings that were precomputed using a different ML task than the one you're trying to solve(pretrained word embeddings). This is similar to use the pretrained CV models(e.g imagenet models) as the base for the new task, since our training data might be too few.
+		- word embeddings(vectors) will reflect the distance between different words to make the subsequent sequence model exploit this useful information
+2. understanding recurrent neural networks
+	* an RNN is a for loop that reuses quantities computed during the previous iteration of the loop, nothing more
+		- due to the gradient vanishing issue, RNN is not useful in practice, use LSTM or GRU instead
+	* LSTM: saves information for later, thus preventing older signals from gradually vanishing during processing
+3. advanced use of RNN
+	* the temperature prediction problem
+	* setup the baseline to beat up(e.g we make next day's temperature same as current temperature as the baseline)
+		- intuitive baseline
+		- simple cheap ML model as baseline
+	* figting overfitting
+		- recurrent dropout: the same dropout mask (the same pattern of dropped units) should be applied at every timestep, instead of a dropout mask that varies randomly from timestep to timestep
+	* stacking recurrent layers(to increase the network capacity)
+		- Because you’re still not overfitting too badly, you could safely increase the size of your layers in a quest for validation-loss improvement
+		- Adding a layer didn’t help by a significant factor, so you may be seeing diminishing returns from increasing network capacity at this point.
+	* using bidirectional RNNs
+4. sequence processing with convnets
+	* a faster cheaper alternative to RNNs on some problems(esp. NLP tasks, since the position might not be that important, comparing to temperature)
+	* use 1D convolutions, extracting local 1D patches (subsequences) from sequences
+	* 1D pooling: subsampling, e.g max-pooling, average pooling
+5. combine CNNs and RNNs to process long sequences
+	* sometimes, sequences are too long and it's too expensive to process directly using RNNs, so using CNNs to downsample(make the sequences shorter, but keep the high level features) might be a good way to proceed
+
+![onehot-vs-wordembedding](/images/onehot-vs-word.png)
+
+![rnn](/images/rnn-unroll.png)
+
+![lstm](/images/lstm-track.png)
+
+![bidirectional rnn](/images/bidirecional-rn.png)
+
+![1d convnet](/images/1d-convnet.png)
+
+![cnn-rnn](/images/cnn-rnn.png)
+
+![summary](/images/chap6-summary.png)
