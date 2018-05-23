@@ -371,3 +371,23 @@ Quick Link
 ![cnn-rnn](/images/cnn-rnn.png)
 
 ![summary](/images/chap6-summary.png)
+
+## Chapter 7: Advanced Deep Learning Best Practices
+
+1. Complicated model might have 1+ inputs and 1+ outputs
+2. Keras's functional API: each layer can be viewed as a function of input tensor and output tensor
+	* multi-inputs model: concatenate inputs
+	* multi-outputs model: combine the losses to one to be able to train, e.g sum them up
+	* Directed acyclic graphs of layers: e.g Inception module, residual connection
+	* layer weight sharing: layer reuse
+	* Models as layers: viewed as a *big* function(layer)
+3. inspecting and monitoring deep learning models using keras callbacks and TensorBoard
+	* keras callbacks: model checkpointing, early stopping, dynamically adjusting parameters, logging metrics, visualing the representations
+	* TensorBoard: visualize the detail of model training
+4. Getting the most out of your models
+	* batch normalization: e.g after a Conv, or a Dense
+	* Depthwise separable convolution: separating the learning of spatial features and the learning of channel-wise features
+	* hyperparameters optimization: some tools to help finding the optimal hyperparameters automatically(random search, etc.)
+	* model ensembling: ensemble different models that are as good as possible, and as different as possible(diversity), e.g blending deep learning with shallow learning
+
+![summary](/images/chap7-summary.png)
