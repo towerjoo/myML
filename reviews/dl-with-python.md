@@ -391,3 +391,34 @@ Quick Link
 	* model ensembling: ensemble different models that are as good as possible, and as different as possible(diversity), e.g blending deep learning with shallow learning
 
 ![summary](/images/chap7-summary.png)
+
+## Chapter 8: Generative deep learning
+
+1. Text generation with LSTM
+	* sampling process
+		- greedy sampling: always sample the one with highest probability(too many repeating)
+		- stochastic sampling: sample based on their probability, e.g "a" is .3, then it has 30% to be sampled as the next char
+	* control the randomness
+		- more entropy: means the results might be more random, and more interesting, surprising
+		- less entropy: means the results might be more realistic, but less surprising
+		- all candidates have the same probability to sample from: highest entropy, but not realistic(or follow the correct the syntax)
+		- greedy sampling: lowest entropy, too many duplications, less interesting
+		- based on the softmax probability is a tradeoff of the two extreme conditions, but we can also control the randomness to make it more realistic or interesting
+		- add a temperature parameter to control the randomness
+2. DeepDream
+	* try to maximize the activation of entire layers rather than that of a specific filter, thus mixing together visualizations of large num- bers of features at once
+	* start not from blank, slightly noisy input, but rather from an existing image—thus the resulting effects latch on to preexisting visual patterns, distorting elements of the image in a somewhat artistic fashion
+	* input images are processed at different scales (called octaves), which improves the quality of the visualizations
+3. Neural style transfer
+4. Generating images with variational autoencoders(VAE)
+	* An encoder module turns the input samples input_img into two parameters in a latent space of representations, z_mean and z_log_variance.
+	* You randomly sample a point z from the latent normal distribution that’s assumed to generate the input image, viaz=z_mean+exp(z_log_variance)* epsilon, where epsilon is a random tensor of small values.
+	* A decoder module maps this point in the latent space back to the original input image.
+5. Introduction to generative adversarial networks(GAN)
+	* It’s a dynamic system where the optimization process is seeking not a minimum, but an equilibrium between two forces
+
+![lang model](/images/lang-model.png)
+
+![gen image](/images/gen-image.png)
+
+![summary](/images/chap8-summary.png)
