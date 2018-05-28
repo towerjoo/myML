@@ -422,3 +422,56 @@ Quick Link
 ![gen image](/images/gen-image.png)
 
 ![summary](/images/chap8-summary.png)
+
+## Chapter 9: Conclusions
+
+1. key concepts in review
+	* DL vs ML vs AI (different scopes, and the former one is a subset of the latter one)
+	* think about DL: turning meaning into vectors, into geometric spaces, and then incrementally learning complex geometric transformations that map one space to another(spaces of sufficiently high dimensionality)
+		- everything is a point in a geometric space
+		- Model inputs (text, images, and so on) and targets are first vectorized
+		- Each layer in a deep-learning model operates one simple geometric transformation on the data that goes through it
+		- This transformation is parameterized by the weights of the layers, which are iteratively updated based on how well the model is currently performing
+		- A key characteristic of this geometric transfor- mation is that it must be differentiable, which is required in order for us to be able to learn its parameters via gradient descent(Intuitively, this means the geometric morphing from inputs to outputs must be smooth and continuous — a significant constraint.)
+		- meaning is derived from the pairwise relationship between things (between words in a language, between pixels in an image, and so on) and that these relationships can be captured by a distance function(brain might implement meaning in a different way, that we are not exactly sure yet)
+	* why DL took off
+		- Incremental algorithmic innovations
+		- The availability of large amounts of perceptual data
+		- The availability of fast, highly parallel computation hardware at a low price, esp. GPU
+		- A complex stack of software layers that makes this computational power available to humans, e.g tensorflow, pytorch, keras
+	* ML workflow
+		- Define the problem
+		- Identify a way to reliably measure success on your goal
+		- Prepare the validation process that you’ll use to evaluate your models
+		- Vectorize the data by turning it into vectors and preprocessing it in a way that makes it more easily approachable by a neural network (normalization, and so on) (it might not be a must, but this preprocessing can boost the learning speed)
+		- Develop a first model that beats a trivial common-sense baseline, thus demonstrating that machine learning can work on your problem
+		- Gradually refine your model architecture by tuning hyperparameters and add- ing regularization
+		- Be aware of validation-set overfitting when turning hyperparameters
+	* key network architectures(Densely connected networks, convolutional networks and recurrent networks)
+		- Vector data —Densely connected network (Dense layers)
+		- Image data - 2D convnets
+		- sound data - either 1d convnets(preferred) or RNNs
+		- text data - either RNNs(preferred) or 1d convnets
+		- timeseries data - either RNNs(preferred) or 1d convnets
+		- other types of sequence data - Either RNNs or 1D convnets. Prefer RNNs if data ordering is strongly meaningful (for example, for timeseries, but not for text)
+		- Video data—Either 3D convnets (if you need to capture motion effects) or a combination of a frame-level 2D convnet for feature extraction followed by either an RNN or a 1D convnet to process the resulting sequences
+		- Volumetric data—3D convnets
+2. the limitations of DL
+	* In general, anything that requires reasoning—like programming or applying the scientific method—long-term planning, and algorithmic data manipulation is out of reach for deep-learning models, no matter how much data you throw at them
+	* All it can do is map one data manifold X into another manifold Y, assuming the existence of a learnable continuous transform from X to Y
+	* never fall into the trap of believing that neural networks understand the task they perform—they don’t, at least not in a way that would make sense to us
+	* Local generalization vs. extreme generalization(reasoning and abstraction is very hard)
+3. the future of DL
+	* Models closer to general-purpose computer programs, built on top of far richer primitives than the current differentiable layers
+	* New forms of learning that make the previous point possible, allowing models to move away from differentiable transforms
+	* Models that require less involvement from human engineers
+	* Greater, systematic reuse of previously learned features and architectures, such as meta-learning systems using reusable and modular program subroutines
+	* Beyond backpropagation and differentiable layers(when models are used as program, maybe the whole program will not be differentiable)
+	* Automated machine learning(AutoML)
+
+![dim mirrow](/images/dim-mirror.png)
+
+![models as program](/images/model-prog.png)
+
+![meta learner](/images/abstraction-learner.png)
+		
