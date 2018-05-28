@@ -23,6 +23,12 @@ Quick Link
 * [Chapter 1: What is Deep Learning](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-1-what-is-deep-learning)
 * [Chapter 2: the mathematical building blocks of neural networks](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-2-the-mathematical-building-blocks-of-neural-networks)
 * [Chapter 3: Getting started with neural networks](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-3-getting-started-with-neural-networks)
+* [Chapter 4: Fundamentals of machine learning](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-4-fundamentals-of-machine-learning)
+* [Chapter 5: Deep learning for computer vision](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-5-deep-learning-for-computer-vision)
+* [Chapter 6: Deep learning for text and sequences](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-6-deep-learning-for-text-and-sequences)
+* [Chapter 7: Advanced Deep Learning Best Practices](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-7-advanced-deep-learning-best-practices)
+* [Chapter 8: Generative deep learning](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-8-generative-deep-learning)
+* [Chapter 9: Conclusions](https://github.com/towerjoo/myML/blob/master/reviews/dl-with-python.md#chapter-9-conclusions)
 
 ## Chapter 1: What is Deep Learning?
 
